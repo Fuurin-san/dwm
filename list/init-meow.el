@@ -1,3 +1,7 @@
+;;; init-meow.el --- setting of meow keyboard shortcut
+;;; Commentary:
+;;; code:
+
 ;;meow
 ;;(use-package meow)
 (package-install 'meow)
@@ -93,3 +97,5 @@
 (meow-global-mode 1)
 
 (provide 'init-meow)
+
+;;; init-meow.el ends here

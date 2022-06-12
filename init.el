@@ -1,4 +1,4 @@
-;;; init.el --- setting for emacs
+;;; init.el --- setting of emacs
 ;;; Commentary:
 ;;; Code:
 

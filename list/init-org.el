@@ -1,3 +1,7 @@
+;;; init-org.el --- setting of emacs org-mode
+;;; Commentary:
+;;; Code:
+
 (require 'org-tempo)
 
 (use-package org
@@ -54,3 +58,5 @@
 ;;        "~/node_modules/mathjax-node-cli/bin/tex2svg"))
 ;;
 (provide 'init-org.el)
+
+;;; init-org.el ends here

@@ -1,3 +1,7 @@
+;;; init-kbd.el --- setting of emacs keyboard shortcut
+;;; Commentary:
+;;; Code:
+
 ;;设置"C-n"与"C-p"为激活company补全时的上下切换鍵
 ;;(define-key company-active-map (kbd "C-n") 'company-select-next)
 ;;(define-key company-active-map (kbd "C-p") 'company-select-previous)
@@ -21,3 +25,5 @@
 
 
 (provide 'init-kbd.el)
+
+;;; init-kbd.el ends here

@@ -1,4 +1,4 @@
-;;; init-config.el --- setting emacs for my config
+;;; init-config.el --- open emacs build-in
 ;;; Commentary:
 ;;; Code:
 (setq make-backup-files nil)

@@ -1,4 +1,4 @@
-;;; init-elpa-package.el --- setting for emacs use-package
+;;; init-elpa-package.el --- setting of emacs use-package
 ;;; Commentary:
 ;;; Code:
 
