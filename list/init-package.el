@@ -148,6 +148,9 @@
   :ensure nil
   :hook (after-init . save-place-mode))
 
+;;vterm
+(use-package vterm
+  :ensure t)
 
 ;;(meow-leader-define-key
 ;; '("t" . one-key-menu-magit))
