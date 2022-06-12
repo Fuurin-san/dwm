@@ -90,10 +90,10 @@
 (use-package fanyi)
 
 ;;lsp-bridge配置
-(add-to-list 'load-path "~/.emacs.d/github/lsp-bridge")
 (package-install 'posframe)
 (package-install 'yasnippet)
 (package-install 'markdown-mode)
+(add-to-list 'load-path "~/.emacs.d/github/lsp-bridge")
 (require 'yasnippet)
 (require 'lsp-bridge)
 (yas-global-mode 1)
