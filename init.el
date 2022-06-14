@@ -18,7 +18,6 @@
 (require 'init-package.el)
 (require 'init-config.el)
 (require 'init-org.el)
-;(require 'init-ui.el)
 (require 'init-ui.el)
 (require 'init-kbd.el)
 (require 'init-meow)
