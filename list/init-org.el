@@ -4,9 +4,9 @@
 
 (require 'org-tempo)
 
-;;(use-package org
-;;  :pin melpa
-;;  :ensure t)
+(use-package org
+  :pin melpa
+  :ensure t)
 
 ;;org ToDo
 (setq org-todo-keywords
