@@ -14,7 +14,7 @@
 (global-hl-line-mode t)
 
 ;;release super
-(setq w32-apps-modifier 'super)
+;;(setq w32-apps-modifier 'super)
 
 (require 'org-tempo)
 ;;(icomplete-mode 1)

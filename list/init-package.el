@@ -150,7 +150,9 @@
 
 ;;vterm
 (use-package vterm
-  :ensure t)
+  :ensure t
+  :init
+ (setq vterm-shell "zsh"))
 
 ;;(meow-leader-define-key
 ;; '("t" . one-key-menu-magit))
