@@ -4,19 +4,19 @@
 
 (require 'org-tempo)
 
-(use-package org
-  :pin melpa
-  :ensure t)
+;;(use-package org
+;;  :pin melpa
+;;  :ensure t)
 
 ;;org ToDo
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
 	      (sequence "WAITING(w@/!)" "SOMEDAY(S)" "|" "CANCELLED(c@/!)" "MEETING(m)" "PHONE(p)"))))
 
-(use-package org-contrib
-  :pin nongnu)
+;;(use-package org-contrib
+;;  :pin nongnu)
 
-(require 'org-checklist)
+;;(require 'org-checklist)
 
 ;;收起org-mode log information
 (setq org-log-done t)
