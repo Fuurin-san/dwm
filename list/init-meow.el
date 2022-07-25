@@ -2,8 +2,25 @@
 ;;; Commentary:
 ;;; code:
 
+;;(unless (package-installed-p 'evvil)
+;;  (package-install 'evil))
+;;(require 'evil)
+;;(evil-mode 1)
+
+;;(use-package sis
+;;  :config
+;;  (sis-ism-lazyman-config "1" "2" 'fcitx5);设置输入法为fcitx5
+;;  (sis-global-cursor-color-mode t);开启中英光标颜色
+;;  (sis-global-respect-mode t);开启输入法状态记忆模式
+;;  (sis-global-context-mode t)
+;;  (sis-global-inline-mode t);中文输入法时,中文后<spc>自动切换英文结束后自动切换回英文
+;;  (setq sis-default-cursor-color "green yellow";英文光标颜色
+;;	sis-other-cursor-color "#FFd2d2"))
+;;(sis-get)
+
+
 ;;meow
-;;(use-package meow)
+(use-package meow)
 (package-install 'meow)
 (require 'meow)
 (defun meow-setup ()
@@ -95,6 +112,8 @@
 (setq meow-use-cursor-position-hack t
       meow-use-enhanced-selection-effect t)
 (meow-global-mode 1)
+
+
 
 (provide 'init-meow)
 
