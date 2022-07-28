@@ -107,7 +107,8 @@
    '("Y" . meow-sync-grab)
    '("z" . meow-pop-selection)
    '("'" . repeat)
-   '("<escape>" . ignore)))
+   '("<escape>" . meow-last-buffer)
+   '("Z" . meow-pop-search)))
 (meow-setup)
 (setq meow-use-cursor-position-hack t
       meow-use-enhanced-selection-effect t)
