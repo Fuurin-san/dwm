@@ -47,6 +47,7 @@
 ;;对齐org-mode的表格
 (package-install 'valign)
 (add-hook 'org-mode-hook #'valign-mode)
+(setq valign-fancy-bar 'non-nil)
 
 ;;半实时渲染latex
 ;;(use-package org-latex-impatient
@@ -57,6 +58,12 @@
 ;;        ;; location of tex2svg executable
 ;;        "~/node_modules/mathjax-node-cli/bin/tex2svg"))
 ;;
+(add-to-list 'load-path "~/.emacs.d/github/org-bars")
+(require 'org-bars)
+(add-hook 'org-mode-hook #'org-bars-mode)
+
+(setq org-hide-emphasis-markers t)
+
 (provide 'init-org.el)
 
 ;;; init-org.el ends here

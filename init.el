@@ -23,7 +23,7 @@
 (require 'init-meow)
 ;;(require 'company-english-helper)
 
-
+(set-face-attribute 'default nil :font (font-spec :family "JetBrains Mono" :size 13))
 
 
 

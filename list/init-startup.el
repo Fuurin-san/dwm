@@ -2,11 +2,14 @@
 ;;; Commentary:
 ;;; Code:
 
-(prefer-coding-system 'utf-8)
-(set-default-coding-systems 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(setq default-buffer-file-coding-system 'utf-8)
+;設置系統編碼，避免亂碼。
+;;(prefer-coding-system 'utf-8)
+;;(set-default-coding-systems 'utf-8)
+;;(set-terminal-coding-system 'utf-8)
+;;(set-keyboard-coding-system 'utf-8)
+;;(setq default-buffer-file-coding-system 'utf-8) ;;default-buffer-file-coding-system is a void variable
+(progn(set-language-environment "UTF-8")
+      (setq system-time-locale "C"))
 
 (setq gc-cons-threshold most-positive-fixnum)
 
