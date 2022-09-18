@@ -16,7 +16,8 @@
 ;;(global-set-key (kbd "M-n") 'netease-cloud-music)
 
 ;;set shortkey of dirvish
-(global-set-key (kbd "M-e") 'dirvish)
+;;(global-set-key (kbd "M-e") 'dirvish-dwim)
+;;(global-set-key (kbd "M-q") 'dirvish-quit)
 (global-set-key (kbd "C-c o") 'consult-file-externally)
 (global-set-key (kbd "C-c f") 'consult-locate)
 
