@@ -228,6 +228,15 @@
 	)
   (define-key rime-mode-map (kbd "M-p") 'rime-force-enable))
 
+;;tree-sitter syntax highlight
+(package-install 'tree-sitter)
+(package-install 'tree-sitter-langs)
+(require 'tree-sitter)
+(require 'tree-sitter-langs)
+(global-tree-sitter-mode)
+(add-hook 'python-mode-hook #'tree-sitter-hl-mode)
+(add-hook 'c-mode-hook #'tree-sitter-hl-mode)
+(add-hook 'rust-mode-hook #'tree-sitter-hl-mode)
 
 
 (provide 'init-package.el)
