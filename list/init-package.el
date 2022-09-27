@@ -16,9 +16,9 @@
   :hook (after-init ./benchmark-init/deactive))
 
 ;;
-(use-package drag-stuff
-  :bind (("<M-up>" . drag-stuff-up)
-	 ("<M-down>" . drag-stuff-down)))
+;;(use-package drag-stuff
+;;  :bind (("<M-up>" . drag-stuff-up)
+;;	 ("<M-down>" . drag-stuff-down)))
 
 ;;文件格式检查
 (use-package flycheck
@@ -59,8 +59,8 @@
 ;;(global-set-key (kbd "M-,") 'memory-usage)
 
 ;;high light
-(package-install 'symbol-overlay)
-(global-set-key (kbd "M-s h") 'symbol-overlay-put)
+;;(package-install 'symbol-overlay)
+;;(global-set-key (kbd "M-s h") 'symbol-overlay-put)
 
 ;;dirvish
 ;;(package-install 'dirvish)
@@ -125,7 +125,7 @@
 ;;  :defer t)
 
 ;;fanyi
-(use-package fanyi)
+;;(use-package fanyi)
 
 ;;lsp-bridge配置
 (package-install 'posframe)
@@ -133,39 +133,42 @@
 (package-install 'markdown-mode)
 (add-to-list 'load-path "~/.emacs.d/github/lsp-bridge")
 (require 'yasnippet)
-(require 'lsp-bridge)
 (yas-global-mode 1)
+(require 'lsp-bridge)
 (global-lsp-bridge-mode)
 
 (package-install 'magit)
 
+;;emacs top
 (add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
 (require 'explain-pause-mode)
 
+;;treeemacs
 (package-install 'treemacs)
 
-(add-to-list 'load-path "~/.emacs.d/github/one-key")
-(require 'one-key)
-(one-key-create-menu
- "MAGIT"
- '(
-   (("s" . "Magit status") . magit-status+)
-   (("c" . "Magit checkout") . magit-checkout)
-   (("C" . "Magit commit") . magit-commit)
-   (("u" . "Magit push to remote") . magit-push-current-to-pushremote)
-   (("p" . "Magit delete remote branch") . magit-delete-remote-branch)
-   (("i" . "Magit pull") . magit-pull-from-upstream)
-   (("r" . "Magit rebase") . magit-rebase)
-   (("e" . "Magit merge") . magit-merge)
-   (("l" . "Magit log") . magit-log-all)
-   (("L" . "Magit blame") . magit-blame+)
-   (("b" . "Magit branch") . magit-branch)
-   (("B" . "Magit buffer") . magit-process-buffer)
-   (("D" . "Magit discarded") . magit-discard)
-   (("," . "Magit init") . magit-init)
-   (("." . "Magit add remote") . magit-remote-add)
-   )
- t)
+;;one-key keypad
+;;(add-to-list 'load-path "~/.emacs.d/github/one-key")
+;;(require 'one-key)
+;;(one-key-create-menu
+;; "MAGIT"
+;; '(
+;;   (("s" . "Magit status") . magit-status+)
+;;   (("c" . "Magit checkout") . magit-checkout)
+;;   (("C" . "Magit commit") . magit-commit)
+;;   (("u" . "Magit push to remote") . magit-push-current-to-pushremote)
+;;   (("p" . "Magit delete remote branch") . magit-delete-remote-branch)
+;;   (("i" . "Magit pull") . magit-pull-from-upstream)
+;;   (("r" . "Magit rebase") . magit-rebase)
+;;   (("e" . "Magit merge") . magit-merge)
+;;   (("l" . "Magit log") . magit-log-all)
+;;   (("L" . "Magit blame") . magit-blame+)
+;;   (("b" . "Magit branch") . magit-branch)
+;;   (("B" . "Magit buffer") . magit-process-buffer)
+;;   (("D" . "Magit discarded") . magit-discard)
+;;   (("," . "Magit init") . magit-init)
+;;   (("." . "Magit add remote") . magit-remote-add)
+;;   )
+;; t)
 
 ;;auto-save-command-history
 (use-package savehist
@@ -178,8 +181,7 @@
 					      search-ring
 					      regexp-search-ring
 					      extended-command-history)
-	      savehist-autosave-interval 300)
-  )
+	      savehist-autosave-interval 300))
 
 ;;auto-save-cursor-history
 (use-package saveplace
@@ -187,10 +189,10 @@
   :hook (after-init . save-place-mode))
 
 ;;vterm
-(use-package vterm
-  :ensure t
-  :init
- (setq vterm-shell "zsh"))
+;;(use-package vterm
+;;  :ensure t
+;;  :init
+;; (setq vterm-shell "zsh"))
 
 ;;(meow-leader-define-key
 ;; '("t" . one-key-menu-magit))

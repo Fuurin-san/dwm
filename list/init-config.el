@@ -11,7 +11,7 @@
 (delete-selection-mode t)
 
 ;;高亮当前行
-(global-hl-line-mode t)
+;;(global-hl-line-mode t)
 
 ;;release super
 ;;(setq w32-apps-modifier 'super)

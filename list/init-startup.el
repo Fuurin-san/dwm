@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-;設置系統編碼，避免亂碼。
+;; 設置系統編碼。
 ;;(prefer-coding-system 'utf-8)
 ;;(set-default-coding-systems 'utf-8)
 ;;(set-terminal-coding-system 'utf-8)
@@ -11,7 +11,25 @@
 (progn(set-language-environment "UTF-8")
       (setq system-time-locale "C"))
 
-(setq gc-cons-threshold most-positive-fixnum)
+;; GC 優化 emacs 的垃圾回收行爲。
+;; 
+(setq gc-elapsed t)
+(defmacro k-time (&rest body)
+  "Measure and return the time it takes evaluating BODY."
+   `(let ((time (current-time)))
+      ,@body
+      (float-time(time-since time))))
+;; Set garbage collection threshold to 512M.
+;; 設置回收閾值爲 512MB
+(setq gc-cons-threshold #x20000000)
+;; When idle for 15sec run the GC no matter what.
+;; 空閒 15s 後運行 GC
+(defvar k-gc-timer
+  (run-with-idle-timer 15 t
+		       (lambda ()
+			 (message "Garbage Collector has run for %.06fsec"
+				   (k-time (garbage-collect))))))
+;;(setq gc-cons-threshold most-positive-fixnum)
 
 (tool-bar-mode -1)
 ;;turn off tool bar
