@@ -89,7 +89,7 @@
   (setq dired-listing-switches
         "-l --almost-all --human-readable --time-style=long-iso --group-directories-first --no-group")
   :bind ; Bind `dirvish|dirvish-side|dirvish-dwim' as you see fit
-  (("C-c f" . dirvish-dwim)
+  (("C-c f" . dirvish-fd)
    :map dirvish-mode-map ; Dirvish inherits `dired-mode-map'
    ("a"   . dirvish-quick-access)
    ("f"   . dirvish-file-info-menu)
@@ -137,6 +137,13 @@
 (require 'lsp-bridge)
 (global-lsp-bridge-mode)
 
+(unless (display-graphic-p)
+  (add-to-list 'load-path "~/.emacs.d/github/emacs-popon")
+  (add-to-list 'load-path "~/.emacs.d/github/acm-terminal")
+  (with-eval-after-load 'acm
+    (require 'acm-terminal)))
+
+;; magit
 (package-install 'magit)
 
 ;;emacs top
@@ -240,6 +247,7 @@
 (add-hook 'c-mode-hook #'tree-sitter-hl-mode)
 (add-hook 'rust-mode-hook #'tree-sitter-hl-mode)
 
+(package-install 'rust-mode)
 
 (provide 'init-package.el)
 ;;; init-package.el ends here
