@@ -81,7 +81,10 @@
      ("t" "~/.local/share/Trash/files/" "TrashCan")))
   :config
   (dirvish-peek-mode) ; Preview files in minibuffer
-  (setq dirvish-mode-line-format
+  (setq dirvish-mode-line-height 25)
+  (setq	dirvish-header-line-format
+	'(:left (path) :right (free-space))
+	dirvish-mode-line-format
         '(:left (sort file-time " " file-size symlink) :right (omit yank index)))
   (setq dirvish-attributes
         '(all-the-icons file-size collapse subtree-state vc-state git-msg))
@@ -108,15 +111,6 @@
    ("M-s" . dirvish-setup-menu)
    ("M-e" . dirvish-emerge-menu)
    ("M-j" . dirvish-fd-jump)))
-;;doom-modeline
-;;(require 'doom-modeline)
-;;(package-install 'doom-modeline)
-;;(doom-modeline-mode 1)
-;;(use-package doom-modeline
-;;  :ensure t
-;;  :init (doom-modeline-mode 1)
-;;  :config
-;;  (setq doom-modeline-height 15))
 
 ;;(use-package company-english-helper
 ;;  :load-path "~/.emacs.d/github/company-english-helper"
