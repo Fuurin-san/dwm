@@ -64,6 +64,6 @@
 
 (setq org-hide-emphasis-markers t)
 
-(provide 'init-org.el)
+(provide 'init-org)
 
 ;;; init-org.el ends here

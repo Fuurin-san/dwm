@@ -243,5 +243,5 @@
 
 (package-install 'rust-mode)
 
-(provide 'init-package.el)
+(provide 'init-package)
 ;;; init-package.el ends here

@@ -31,19 +31,11 @@
 				   (k-time (garbage-collect))))))
 ;;(setq gc-cons-threshold most-positive-fixnum)
 
-(tool-bar-mode -1)
-;;turn off tool bar
-
-(scroll-bar-mode -1)
-;;turn off scroll bar
-;;(global-linum-mode t)
 
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode t)
 ;;line number
 
-(menu-bar-mode -1)
-;;turn off menu-bar
 
 (setq-default cursor-type '(bar . 2))
 ;;set cursor type
@@ -57,5 +49,5 @@
 (setq ring-bell-function 'ignore)
 (blink-cursor-mode -1)
 
-(provide 'init-startup.el)
+(provide 'init-startup)
 ;;; init-startup.el ends here

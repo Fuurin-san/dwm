@@ -46,5 +46,5 @@
 ;;(set-frame-parameter nil 'alpha-background 80)
 ;;(add-to-list 'default-frame-alist '(alpha-background . 80))
 
-(provide 'init-ui.el)
+(provide 'init-ui)
 ;;; init-ui.el ends here

@@ -25,6 +25,6 @@
 (global-set-key (kbd "M-n") 'toggle-company-english-helper)
 
 
-(provide 'init-kbd.el)
+(provide 'init-kbd)
 
 ;;; init-kbd.el ends here

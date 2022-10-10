@@ -43,6 +43,6 @@
 ;;(require 'pyim-basedict)
 ;;(pyim-basedict-enable)
 
-(provide 'init-config.el)
+(provide 'init-config)
 ;;; init-config.el ends here
 
