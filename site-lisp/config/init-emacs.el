@@ -26,7 +26,6 @@
      1 nil
      #'(lambda ()
 	 (require 'init-tree-sitter)
-	 (require 'init-elispfl)
 	 ))))
 
 (provide 'init-emacs)
