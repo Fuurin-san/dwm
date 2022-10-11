@@ -18,6 +18,7 @@
     (require 'init-ui)
     (require 'init-kbd)
     (require 'init-meow)
+    (require 'init-auto-save)
     (require 'init-lsp-bridge)
 
     ;; 可以延後加載的

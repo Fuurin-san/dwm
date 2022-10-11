@@ -13,3 +13,6 @@
 [submodule "site-lisp/extensions/tree-sitter"]
 	path = site-lisp/extensions/tree-sitter
 	url = https://github.com/emacs-tree-sitter/elisp-tree-sitter.git
+[submodule "site-lisp/extensions/auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
