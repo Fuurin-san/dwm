@@ -58,7 +58,6 @@
 ;;        ;; location of tex2svg executable
 ;;        "~/node_modules/mathjax-node-cli/bin/tex2svg"))
 ;;
-(add-to-list 'load-path "~/.emacs.d/github/org-bars")
 (require 'org-bars)
 (add-hook 'org-mode-hook #'org-bars-mode)
 
