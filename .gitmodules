@@ -7,3 +7,9 @@
 [submodule "site-lisp/extensions/org-bars"]
 	path = site-lisp/extensions/org-bars
 	url = https://github.com/tonyaldon/org-bars.git
+[submodule "site-lisp/extensions/yasnippet"]
+	path = site-lisp/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "site-lisp/extensions/tree-sitter"]
+	path = site-lisp/extensions/tree-sitter
+	url = https://github.com/emacs-tree-sitter/elisp-tree-sitter.git

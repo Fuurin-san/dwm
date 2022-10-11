@@ -62,14 +62,7 @@
 ;;(package-install 'symbol-overlay)
 ;;(global-set-key (kbd "M-s h") 'symbol-overlay-put)
 
-;;dirvish
-;;(package-install 'dirvish)
-;;(setq dirvish-attributes '(all-the-icons))
-;;(setq dirvish--debouncing-delay 0.5)
-;;(require 'dirvish-peek)
-;;(dirvish-peek-mode)
-;;(require 'dirvish-vc)
-;;;;(require 'dirvish-layout)
+;; dirvish
 (use-package dirvish
   :init
   (dirvish-override-dired-mode)
@@ -186,23 +179,6 @@
 ;;  :init
 ;; (setq vterm-shell "zsh"))
 
-;;(meow-leader-define-key
-;; '("t" . one-key-menu-magit))
-;;(require ')
-;;corfu-doc
-;;(add-hook 'corfu-mode-hook #'corfu-doc-mode)
-;;(define-key corfu-map (kbd "M-p") #'corfu-doc-scroll-down) ;; corfu-next
-;;(define-key corfu-map (kbd "M-n") #'corfu-doc-scroll-up)  ;; corfu-previous
-;;(define-key corfu-map (kbd "M-d") #'corfu-doc-toggle)
-;;(setq corfu-doc-delay 0)
-
-;;Syntax Highlighting
-;;(package-install 'tree-sitter)
-;;(package-install 'tree-sitter-langs)
-;;(require 'tree-sitter)
-;;(require 'tree-sitter-langs)
-;;(global-tree-sitter-mode)
-
 (use-package rime
   :bind
 ;;  (:rime-mode-map ("M-p" . 'rime-force-enable))
@@ -222,15 +198,6 @@
 	)
   (define-key rime-mode-map (kbd "M-p") 'rime-force-enable))
 
-;;tree-sitter syntax highlight
-(package-install 'tree-sitter)
-(package-install 'tree-sitter-langs)
-(require 'tree-sitter)
-(require 'tree-sitter-langs)
-(global-tree-sitter-mode)
-(add-hook 'python-mode-hook #'tree-sitter-hl-mode)
-(add-hook 'c-mode-hook #'tree-sitter-hl-mode)
-(add-hook 'rust-mode-hook #'tree-sitter-hl-mode)
 
 (package-install 'rust-mode)
 

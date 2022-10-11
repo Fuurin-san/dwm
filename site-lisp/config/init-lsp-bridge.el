@@ -4,9 +4,7 @@
 
 ;;lsp-bridge配置
 (package-install 'posframe)
-(package-install 'yasnippet)
 (package-install 'markdown-mode)
-(add-to-list 'load-path "~/.emacs.d/github/lsp-bridge")
 (require 'yasnippet)
 (yas-global-mode 1)
 (require 'lsp-bridge)
