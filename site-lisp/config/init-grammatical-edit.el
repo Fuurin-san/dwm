@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'grammatical-edit)
+
 (dolist (hook (list
                'c-mode-common-hook
                'c-mode-hook
