@@ -12,6 +12,7 @@
   (with-temp-message ""
     (require 'init-elpa)
     (require 'init-config)
+    (require 'lazy-load)
     (require 'init-package)
     (require 'init-org)
     (require 'init-ui)
@@ -25,6 +26,7 @@
      1 nil
      #'(lambda ()
 	 (require 'init-elispfl)
+	 (require 'init-dirvish)
 	 (require 'init-tree-sitter)
 	 (require 'init-disable-mouse)
 	 ))))
