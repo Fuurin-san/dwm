@@ -128,9 +128,6 @@
 (add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
 (require 'explain-pause-mode)
 
-;;treeemacs
-(package-install 'treemacs)
-
 ;;one-key keypad
 ;;(add-to-list 'load-path "~/.emacs.d/github/one-key")
 ;;(require 'one-key)

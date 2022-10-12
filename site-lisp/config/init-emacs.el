@@ -10,10 +10,9 @@
       (file-name-handler-alist nil))
 
   (with-temp-message ""
-    (require 'init-startup)
     (require 'init-elpa)
-    (require 'init-package)
     (require 'init-config)
+    (require 'init-package)
     (require 'init-org)
     (require 'init-ui)
     (require 'init-kbd)
@@ -29,6 +28,25 @@
 	 (require 'init-tree-sitter)
 	 (require 'init-disable-mouse)
 	 ))))
+
+;; GC 優化 emacs 的垃圾回收行爲。
+;;(setq gc-elapsed t)
+;;(defmacro k-time (&rest body)
+;;  "Measure and return the time it takes evaluating BODY."
+;;   `(let ((time (current-time)))
+;;      ,@body
+;;      (float-time(time-since time))))
+;; Set garbage collection threshold to 512M.
+;; 設置回收閾值爲 512MB
+;;(setq gc-cons-threshold #x20000000)
+;; When idle for 15sec run the GC no matter what.
+;; 空閒 15s 後運行 GC
+;;(defvar k-gc-timer
+;;  (run-with-idle-timer 15 t
+;;		       (lambda ()
+;;			 (message "Garbage Collector has run for %.06fsec"
+;;				   (k-time (garbage-collect))))))
+;;(setq gc-cons-threshold most-positive-fixnum)
 
 (provide 'init-emacs)
 ;;; init-emacs.el ends here

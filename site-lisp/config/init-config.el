@@ -1,6 +1,7 @@
 ;;; init-config.el --- open emacs build-in
 ;;; Commentary:
 ;;; Code:
+
 (setq make-backup-files nil)
 
 ;;括号匹配 & 括号补全
@@ -16,33 +17,38 @@
 ;;release super
 ;;(setq w32-apps-modifier 'super)
 
-(require 'org-tempo)
 ;;(icomplete-mode 1)
 ;;tab鍵自动补全
+(require 'org-tempo)
 
 ;;自动加载外部文件
 (global-auto-revert-mode 1)
 
-;;(fido-mode t)
-;;; setting for pyim(chinese)
-;;(require 'pyim)
-;;(setq default-input-method "pyim")
-;;(global-set-key (kbd "M-j") 'pyim-convert-string-at-point)
-;;(define-key minibuffer-local-map (kbd "C-<return>") 'pyim-cregexp-convert-at-point)
-;;(pyim-default-scheme 'quanpin)
-;;(setq-default pyim-english-input-switch-functions
-;;	      '(pyim-probe-dynamic-english
-;;		pyim-probe-isearch-mode
-;;		pyim-probe-program-mode
-;;		pyim-probe-org-structure-template))
-;;(setq-default pyim-punctuation-half-width-functions
-;;	      '(pyim-probe-punctuation-line-beginning
-;;		pyim-probe-punctuation-after-punctuation))
-;;(pyim-isearch-mode 1)
-;;(setq pyim-page-length 5)
-;;(require 'pyim-basedict)
-;;(pyim-basedict-enable)
+;; 設置系統編碼。
+;;(prefer-coding-system 'utf-8)
+;;(set-default-coding-systems 'utf-8)
+;;(set-terminal-coding-system 'utf-8)
+;;(set-keyboard-coding-system 'utf-8)
+;;(setq default-buffer-file-coding-system 'utf-8) ;;default-buffer-file-coding-system is a void variable
+(progn(set-language-environment "UTF-8")
+      (setq system-time-locale "C"))
+
+;;line number
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode t)
+
+
+;;set cursor type
+(setq-default cursor-type '(bar . 2))
+
+(setq inhibit-splash-screen 1)
+
+;;set yes-->y  no-->n
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;;sound off
+(setq ring-bell-function 'ignore)
+(blink-cursor-mode -1)
 
 (provide 'init-config)
 ;;; init-config.el ends here
-
