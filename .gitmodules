@@ -19,3 +19,6 @@
 [submodule "site-lisp/extensions/elispfl"]
 	path = site-lisp/extensions/elispfl
 	url = https://github.com/cireu/elispfl.git
+[submodule "site-lisp/extensions/disable-mouse"]
+	path = site-lisp/extensions/disable-mouse
+	url = https://github.com/purcell/disable-mouse.git

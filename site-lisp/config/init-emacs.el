@@ -27,6 +27,7 @@
      #'(lambda ()
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
+	 (require 'init-disable-mouse)
 	 ))))
 
 (provide 'init-emacs)
