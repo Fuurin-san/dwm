@@ -20,7 +20,7 @@
     (require 'init-meow)
     (require 'init-auto-save)
     (require 'init-lsp-bridge)
-
+    (require 'init-grammatical-edit)
     ;; 可以延後加載的
     (run-with-idle-timer
      1 nil
