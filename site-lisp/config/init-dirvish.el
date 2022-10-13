@@ -16,6 +16,8 @@
 (require 'dirvish-quick-access)		;; 顯示經常訪問位置快捷鍵
 (require 'dirvish-collapse)		;; 
 (require 'dirvish-narrow)		;; 
+(require 'dirvish-extras)
+(require 'dirvish-widgets)
 
 (dirvish-override-dired-mode)
 (setq dirvish-quick-access-entries ; It's a :custom option
