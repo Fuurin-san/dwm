@@ -28,3 +28,6 @@
 [submodule "site-lisp/extensions/dirvish"]
 	path = site-lisp/extensions/dirvish
 	url = https://github.com/alexluigit/dirvish.git
+[submodule "site-lisp/extensions/netease-cloud-music"]
+	path = site-lisp/extensions/netease-cloud-music
+	url = https://github.com/SpringHan/netease-cloud-music.el.git

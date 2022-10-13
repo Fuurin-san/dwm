@@ -152,7 +152,6 @@
 	)
   (define-key rime-mode-map (kbd "M-p") 'rime-force-enable))
 
-
 (package-install 'rust-mode)
 
 (provide 'init-package)

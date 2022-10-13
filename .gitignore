@@ -3,6 +3,7 @@ elpa/
 etc/
 github/
 var/
+netease-cloud-music/
 
 #ignore auto backup file
 *.*#
