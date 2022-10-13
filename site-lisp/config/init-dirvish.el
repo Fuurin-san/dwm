@@ -3,6 +3,8 @@
 ;;; Code:
 
 (require 'dirvish)			;; dirvish 基本包
+(require 'dirvish-extras)		;;
+(require 'dirvish-widgets)		;;
 (require 'dirvish-yank)			;;
 (require 'dirvish-emerge)		;;
 (require 'dirvish-peek)			;; minibuffer 預覽
@@ -16,8 +18,6 @@
 (require 'dirvish-quick-access)		;; 顯示經常訪問位置快捷鍵
 (require 'dirvish-collapse)		;; 
 (require 'dirvish-narrow)		;; 
-(require 'dirvish-extras)
-(require 'dirvish-widgets)
 
 (dirvish-override-dired-mode)
 (setq dirvish-quick-access-entries ; It's a :custom option

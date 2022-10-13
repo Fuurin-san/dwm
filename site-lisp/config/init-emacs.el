@@ -21,12 +21,12 @@
     (require 'init-auto-save)
     (require 'init-lsp-bridge)
     (require 'init-grammatical-edit)
+    (require 'init-dirvish)
     ;; 可以延後加載的
     (run-with-idle-timer
      1 nil
      #'(lambda ()
 	 (require 'init-elispfl)
-	 (require 'init-dirvish)
 	 (require 'init-tree-sitter)
 	 (require 'init-disable-mouse)
 	 ))))
