@@ -5,6 +5,7 @@
 (require 'dirvish)			;; dirvish 基本包
 (require 'dirvish-extras)		;;
 (require 'dirvish-widgets)		;;
+;; extensions
 (require 'dirvish-yank)			;;
 (require 'dirvish-emerge)		;;
 (require 'dirvish-peek)			;; minibuffer 預覽
@@ -20,11 +21,11 @@
 (require 'dirvish-narrow)		;; 
 
 (dirvish-override-dired-mode)
-(setq dirvish-quick-access-entries ; It's a :custom option
- '(("h" "~/"                          "Home")
-   ("d" "~/Downloads/"                "Downloads")
-   ("m" "/mnt/"                       "Drives")
-   ("t" "~/.local/share/Trash/files/" "TrashCan")))
+;;(setq dirvish-quick-access-entries ; It's a :custom option
+;; '(("h" "~/"                          "Home")
+;;   ("d" "~/Downloads/"                "Downloads")
+;;   ("m" "/mnt/"                       "Drives")
+;;   ("t" "~/.local/share/Trash/files/" "TrashCan")))
 (dirvish-peek-mode) ; Preview files in minibuffer
 (setq dirvish-mode-line-height 25)
 (setq dirvish-header-line-format
@@ -39,7 +40,6 @@
 ;; 關閉 dirvish 中自動換行
 (add-hook 'dirvish-find-entry-hook
 	  (lambda (&rest _) (setq-local truncate-lines t)))
-(add-hook 'dirvish-directory-view-mode-hook #'dirvish-subtree-toggle)
 
 ;; globalkey
 (global-set-key (kbd "C-c f") 'dirvish-fd)

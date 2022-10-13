@@ -72,18 +72,18 @@
 ;;(use-package fanyi)
 
 
-(unless (display-graphic-p)
-  (add-to-list 'load-path "~/.emacs.d/github/emacs-popon")
-  (add-to-list 'load-path "~/.emacs.d/github/acm-terminal")
-  (with-eval-after-load 'acm
-    (require 'acm-terminal)))
+;;(unless (display-graphic-p)
+;;  (add-to-list 'load-path "~/.emacs.d/github/emacs-popon")
+;;  (add-to-list 'load-path "~/.emacs.d/github/acm-terminal")
+;;  (with-eval-after-load 'acm
+;;    (require 'acm-terminal)))
 
 ;; magit
 (package-install 'magit)
 
 ;;emacs top
-(add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
-(require 'explain-pause-mode)
+;;(add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
+;;(require 'explain-pause-mode)
 
 ;;one-key keypad
 ;;(add-to-list 'load-path "~/.emacs.d/github/one-key")

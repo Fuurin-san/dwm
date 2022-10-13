@@ -2,11 +2,6 @@
 ;;; Commentary:
 ;;; code:
 
-;;(unless (package-installed-p 'evvil)
-;;  (package-install 'evil))
-;;(require 'evil)
-;;(evil-mode 1)
-
 ;;(use-package sis
 ;;  :config
 ;;  (sis-ism-lazyman-config "1" "2" 'fcitx5);设置输入法为fcitx5
@@ -18,9 +13,7 @@
 ;;	sis-other-cursor-color "#FFd2d2"))
 ;;(sis-get)
 
-
 ;;meow
-(use-package meow)
 (package-install 'meow)
 (require 'meow)
 (defun meow-setup ()
