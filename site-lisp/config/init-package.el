@@ -133,25 +133,6 @@
 ;;  :init
 ;; (setq vterm-shell "zsh"))
 
-(use-package rime
-  :bind
-;;  (:rime-mode-map ("M-p" . 'rime-force-enable))
-  :custom
-  (default-input-method "rime")
-  (rime-show-candidate 'posframe)
-  :config
-;;  (setq rime-cursor-face "FFd2d2")
-  (setq rime-disable-predicates
-	'(meow-normal-mode-p
-	  meow-motion-mode-p
-	  meow-beacon-mode-p
-	  meow-keypad-mode-p
-	  rime-predicate-after-ascii-char-p;任意英文字符串之後
-	  rime-predicate-in-code-string-p;在代碼的字符串中，不包含註釋的字符串
-	  rime-predicate-ace-window-p);在使用ace-window時
-	)
-  (define-key rime-mode-map (kbd "M-p") 'rime-force-enable))
-
 (package-install 'rust-mode)
 
 (provide 'init-package)

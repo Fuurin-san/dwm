@@ -29,6 +29,7 @@
 	 (require 'init-disable-mouse)
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
+	 (require 'init-rime)
 	 (require 'init-netease-cloud-music)
 	 ))))
 
