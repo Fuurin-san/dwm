@@ -9,6 +9,12 @@
  "init-dirvish"
  "C-c")
 
+(lazy-load-global-keys
+ '(("i" . popweb-dict-bing-input)
+   ("p" . popweb-dict-bing-pointer))
+ "init-popweb"
+ "C-c")
+
 ;;设置"C-n"与"C-p"为激活company补全时的上下切换鍵
 ;;(define-key company-active-map (kbd "C-n") 'company-select-next)
 ;;(define-key company-active-map (kbd "C-p") 'company-select-previous)

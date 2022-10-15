@@ -31,3 +31,6 @@
 [submodule "site-lisp/extensions/emacs-rime"]
 	path = site-lisp/extensions/emacs-rime
 	url = https://github.com/DogLooksGood/emacs-rime.git
+[submodule "site-lisp/extensions/popweb"]
+	path = site-lisp/extensions/popweb
+	url = https://github.com/manateelazycat/popweb.git

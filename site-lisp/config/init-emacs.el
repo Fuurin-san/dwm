@@ -29,7 +29,6 @@
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
 	 (require 'init-rime)
-	 (require 'init-netease-cloud-music)
 	 ))))
 
 ;; GC 優化 emacs 的垃圾回收行爲。
