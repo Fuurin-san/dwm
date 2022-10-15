@@ -16,12 +16,11 @@
     (require 'init-package)
     (require 'init-org)
     (require 'init-ui)
-    (require 'init-kbd)
     (require 'init-meow)
     (require 'init-auto-save)
     (require 'init-lsp-bridge)
     (require 'init-grammatical-edit)
-    (require 'init-dirvish)
+    (require 'init-key)
     ;; 可以延後加載的
     (run-with-idle-timer
      1 nil
