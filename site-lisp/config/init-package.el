@@ -134,6 +134,9 @@
 ;; (setq vterm-shell "zsh"))
 
 (package-install 'rust-mode)
+(package-install 'flycheck-rust)
+(with-eval-after-load 'rust-mode
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
 
 (provide 'init-package)
 ;;; init-package.el ends here

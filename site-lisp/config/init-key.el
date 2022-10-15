@@ -4,6 +4,7 @@
 
 (lazy-load-global-keys
  '(("d" . dirvish)
+   ("w" . dirvish-dwim)
    ("s" . dirvish-side))
  "init-dirvish"
  "C-c")
