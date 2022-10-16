@@ -8,7 +8,7 @@
 
 ;;(require 'popweb-latex)
 
-(add-hook 'latex-mode-hook #'popweb-latex-mode)
+;;(add-hook 'latex-mode-hook #'popweb-latex-mode)
 
 ;;(setq popweb-proxy-type "socks5")
 ;;(setq popweb-proxy-host "127.0.0.1")
