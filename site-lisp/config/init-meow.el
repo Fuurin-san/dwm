@@ -14,7 +14,6 @@
 ;;(sis-get)
 
 ;;meow
-(package-install 'meow)
 (require 'meow)
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
