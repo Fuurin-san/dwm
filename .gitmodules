@@ -37,3 +37,6 @@
 [submodule "site-lisp/extensions/meow"]
 	path = site-lisp/extensions/meow
 	url = https://github.com/meow-edit/meow.git
+[submodule "site-lisp/extensions/symbol-overlay"]
+	path = site-lisp/extensions/symbol-overlay
+	url = https://github.com/wolray/symbol-overlay.git

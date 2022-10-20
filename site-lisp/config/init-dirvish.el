@@ -64,6 +64,15 @@
 (define-key dirvish-mode-map (kbd "M-j") 'dirvish-fd-jump)
 (define-key dirvish-mode-map (kbd "?") 'dirvish-dispatch)
 
+(lazy-load-global-keys
+ '(
+   ("d" . dirvish)
+   ("w" . dirvish-dwim)
+   ("s" . dirvish-side)
+   )
+ "init-dirvish"
+ "C-c")
+
 ;;;; dirvish
 ;;(use-package dirvish
 ;;  :init
