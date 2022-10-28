@@ -20,6 +20,7 @@
 ;;(package-install 'nyan-mode)
 ;;(setq nyan-wavy-trail t)
 ;;(setq nyan-animate-nyancat t)
+;;(setq nyan-animation-frame-interval 0.5)
 ;;(nyan-mode)
 
 ;;(package-install 'gotham-theme)
