@@ -55,22 +55,8 @@
 (when (display-graphic-p)
   (require 'all-the-icons))
 
-(package-install 'memory-usage)
 ;;(global-set-key (kbd "M-,") 'memory-usage)
-
-;;high light
-;;(package-install 'symbol-overlay)
-;;(global-set-key (kbd "M-s h") 'symbol-overlay-put)
-
-;;(use-package company-english-helper
-;;  :load-path "~/.emacs.d/github/company-english-helper"
-;;  :commands
-;;  (toggle-company-english-helper)
-;;  :defer t)
-
-;;fanyi
-;;(use-package fanyi)
-
+(package-install 'memory-usage)
 
 ;;(unless (display-graphic-p)
 ;;  (add-to-list 'load-path "~/.emacs.d/github/emacs-popon")
@@ -127,12 +113,7 @@
   :ensure nil
   :hook (after-init . save-place-mode))
 
-;;vterm
-;;(use-package vterm
-;;  :ensure t
-;;  :init
-;; (setq vterm-shell "zsh"))
-
+;; rust support
 (package-install 'rust-mode)
 (package-install 'flycheck-rust)
 (with-eval-after-load 'rust-mode
