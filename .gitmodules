@@ -1,9 +1,6 @@
 [submodule "site-lisp/extensions/lsp-bridge"]
 	path = site-lisp/extensions/lsp-bridge
 	url = https://github.com/manateelazycat/lsp-bridge.git
-[submodule "site-lisp/extensions/org-bars"]
-	path = site-lisp/extensions/org-bars
-	url = https://github.com/tonyaldon/org-bars.git
 [submodule "site-lisp/extensions/yasnippet"]
 	path = site-lisp/extensions/yasnippet
 	url = https://github.com/joaotavora/yasnippet.git
