@@ -12,7 +12,7 @@
 (delete-selection-mode t)
 
 ;;高亮当前行
-;;(global-hl-line-mode t)
+(global-hl-line-mode t)
 
 ;;release super
 ;;(setq w32-apps-modifier 'super)
@@ -34,8 +34,8 @@
       (setq system-time-locale "C"))
 
 ;;line number
-(setq display-line-numbers-type 'relative)
-(global-display-line-numbers-mode t)
+;;(setq display-line-numbers-type 'relative)
+;;(global-display-line-numbers-mode t)
 
 
 ;;set cursor type

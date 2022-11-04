@@ -1,4 +1,4 @@
-;;; init.el --- setting of emacs
+;;; init.el --- setting of emacs   -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -14,13 +14,7 @@
 ;;turn off menu-bar
 (menu-bar-mode -1)
 
-
-;;(add-to-list 'load-path
-;;	     (expand-file-name (concat user-emacs-directory "lisp")))
-;;(add-to-list 'load-path "~/.emacs.d/list/")
-;;(add-to-list 'load-path "~/.emacs.d/elisp/company-english-helper")
-
-
+;; 遍历添加文件
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 (defun add-subdirs-to-load-path (search-dir)
@@ -53,8 +47,7 @@
         ;; 继续递归搜索子目录
         (add-subdirs-to-load-path subdir-path)))))
 
-;;(require 'company-english-helper)
-
+;; set font
 (set-face-attribute 'default nil :font (font-spec :family "JetBrains Mono" :size 13))
 
 (add-subdirs-to-load-path "~/.emacs.d")

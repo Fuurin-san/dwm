@@ -25,7 +25,6 @@
     (run-with-idle-timer
      1 nil
      #'(lambda ()
-	 (require 'init-disable-mouse)
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
 	 (require 'init-rime)
