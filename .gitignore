@@ -1,7 +1,6 @@
 custom.el
 elpa/
 etc/
-github/
 var/
 
 #ignore auto backup file

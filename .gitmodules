@@ -34,3 +34,6 @@
 [submodule "site-lisp/extensions/symbol-overlay"]
 	path = site-lisp/extensions/symbol-overlay
 	url = https://github.com/wolray/symbol-overlay.git
+[submodule "site-lisp/extensions/posframe"]
+	path = site-lisp/extensions/posframe
+	url = https://github.com/tumashu/posframe.git

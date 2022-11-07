@@ -3,7 +3,6 @@
 ;;; Code:
 
 ;;; Require:
-(package-install 'posframe)
 (package-install 'markdown-mode)
 (package-install 'dumb-jump)
 (require 'yasnippet)
