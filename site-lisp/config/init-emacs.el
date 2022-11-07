@@ -25,6 +25,7 @@
     (run-with-idle-timer
      1 nil
      #'(lambda ()
+	 (require 'init-blink-search)
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
 	 (require 'init-rime)

@@ -47,12 +47,12 @@
 ;;  ) ;; end custom-set-faces
 
 ;;org-mode theme
-(package-install 'org-modern)
+;;(package-install 'org-modern)
 ;;(add-hook 'org-mode-hook #'org-modern-mode)
 ;;(add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
-(setq org-modern-star nil
-      org-modern-list nil
-      org-modern-table nil)
+;;(setq org-modern-star nil
+;;      org-modern-list nil
+;;      org-modern-table nil)
 
 (global-org-modern-mode)
 
@@ -63,7 +63,7 @@
 ;;(add-hook 'markdown-mode-hook #'valign-mode)
 
 ;; 开启标题缩进
-(add-hook 'org-mode-hook (lambda () (org-indent-mode 1)))
+;;(add-hook 'org-mode-hook (lambda () (org-indent-mode 1)))
 ;; 折叠标识
 (setq org-ellipsis "⌄")
 ;; 特殊强调标记
@@ -76,9 +76,9 @@
       '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷"))
 ;;(setq org-superstar-item-bullet-alist t)
 (setq org-superstar-item-bullet-alist
-      '((?* . ?•)
-	(?+ . ?➤)
-	(?- . ?ᐅ)))
+      '((?+ . ?➤)
+	(?- . ?ᐅ)
+	(?* . ?⁕)))
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
 (provide 'init-org)

@@ -37,3 +37,6 @@
 [submodule "site-lisp/extensions/posframe"]
 	path = site-lisp/extensions/posframe
 	url = https://github.com/tumashu/posframe.git
+[submodule "site-lisp/extensions/blink-search"]
+	path = site-lisp/extensions/blink-search
+	url = https://github.com/manateelazycat/blink-search.git
