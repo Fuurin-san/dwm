@@ -54,7 +54,7 @@
 ;;      org-modern-list nil
 ;;      org-modern-table nil)
 
-(global-org-modern-mode)
+;;(global-org-modern-mode)
 
 ;;对齐org-mode的表格
 (package-install 'valign)

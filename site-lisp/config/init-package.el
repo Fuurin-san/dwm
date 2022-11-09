@@ -25,8 +25,8 @@
   :hook (after-init . global-flycheck-mode))
 
 ;;快速切换buffer
-(use-package ace-window
-  :bind (("M-o" . 'ace-window)))
+(package-install 'ace-window)
+(global-set-key (kbd "M-o") 'ace-window)
 
 ;;minibuffer补全增强 & 无序补全
 (package-install 'vertico)
