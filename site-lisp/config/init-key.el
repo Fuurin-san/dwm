@@ -19,7 +19,8 @@
 
 (lazy-load-global-keys
  '(("l" . popweb-dict-bing-input)
-   (";" . popweb-dict-bing-pointer))
+   (";" . popweb-dict-bing-pointer)
+   ("p" . popweb-latex-mode))
  "init-popweb"
  "C-c")
 
