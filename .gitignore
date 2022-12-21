@@ -2,6 +2,7 @@ custom.el
 elpa/
 etc/
 var/
+eln-cache/
 
 #ignore auto backup file
 *.*#
