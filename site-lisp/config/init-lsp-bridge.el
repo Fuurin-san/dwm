@@ -14,6 +14,7 @@
 (global-lsp-bridge-mode)
 
 ;;(setq acm-enable-quick-access t)
+(setq lsp-bridge-c-lsp-server "ccls")
 
 ;; 融合 `lsp-bridge' `find-function' 以及 `dumb-jump' 的智能跳转
 (defun lsp-bridge-jump ()

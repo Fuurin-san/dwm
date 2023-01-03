@@ -119,5 +119,7 @@
 (with-eval-after-load 'rust-mode
   (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
 
+(package-install 'nix-mode)
+
 (provide 'init-package)
 ;;; init-package.el ends here
