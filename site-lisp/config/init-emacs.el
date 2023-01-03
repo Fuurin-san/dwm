@@ -28,7 +28,7 @@
 	 (require 'init-blink-search)
 	 (require 'init-elispfl)
 	 (require 'init-tree-sitter)
-	 (require 'init-rime)
+	 ;;(require 'init-rime)
 	 ))))
 
 ;; GC 優化 emacs 的垃圾回收行爲。
