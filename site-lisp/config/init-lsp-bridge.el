@@ -13,7 +13,9 @@
 (yas-global-mode 1)
 (global-lsp-bridge-mode)
 
-;;(setq acm-enable-quick-access t)
+;; Alt + Num 快速选择候选项
+(setq acm-enable-quick-access t)
+
 (setq lsp-bridge-c-lsp-server "ccls")
 
 ;; 融合 `lsp-bridge' `find-function' 以及 `dumb-jump' 的智能跳转
