@@ -40,3 +40,6 @@
 [submodule "site-lisp/extensions/blink-search"]
 	path = site-lisp/extensions/blink-search
 	url = https://github.com/manateelazycat/blink-search.git
+[submodule "site-lisp/extensions/sis"]
+	path = site-lisp/extensions/sis
+	url = https://github.com/laishulu/emacs-smart-input-source.git
