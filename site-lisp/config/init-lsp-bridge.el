@@ -13,6 +13,12 @@
 (yas-global-mode 1)
 (global-lsp-bridge-mode)
 
+
+;;1.cargo install ds-pinyin-lsp
+;;2.下载 ds-pinyin 的 dict.db3 文件，并保存到目录 ~/.emacs.d/ds-pinyin/
+;;3.最后开启选项 lsp-bridge-use-ds-pinyin-in-org-mode
+(setq lsp-bridge-use-ds-pinyin-in-org-mode t)
+
 ;; Alt + Num 快速选择候选项
 (setq acm-enable-quick-access t)
 
