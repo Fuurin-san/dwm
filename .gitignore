@@ -3,6 +3,7 @@ elpa/
 etc/
 var/
 eln-cache/
+ds-pinyin/
 blink-search.db
 
 #ignore auto backup file
