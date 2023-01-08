@@ -16,6 +16,7 @@
     (require 'init-package)
     (require 'init-org)
     (require 'init-ui)
+    (require 'init-font)
     (require 'init-meow)
     (require 'init-auto-save)
     (require 'init-lsp-bridge)

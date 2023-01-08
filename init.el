@@ -48,7 +48,7 @@
         (add-subdirs-to-load-path subdir-path)))))
 
 ;; set font
-(set-face-attribute 'default nil :font (font-spec :family "JetBrains Mono" :size 13))
+;;(set-face-attribute 'default nil :font (font-spec :family "JetBrains Mono" :size 13))
 
 (add-subdirs-to-load-path "~/.emacs.d")
 
