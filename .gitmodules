@@ -43,3 +43,6 @@
 [submodule "site-lisp/extensions/sis"]
 	path = site-lisp/extensions/sis
 	url = https://github.com/laishulu/emacs-smart-input-source.git
+[submodule "site-lisp/extensions/markdown-mode"]
+	path = site-lisp/extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git

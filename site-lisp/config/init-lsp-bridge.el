@@ -2,8 +2,13 @@
 ;;; Commentary:
 ;;; Code:
 
+;; Source: https://github.com/manateelazycat/lsp-bridge
+
 ;;; Require:
-(package-install 'markdown-mode)
+;; markdown-mode
+;; posframe
+;; yasnippet
+
 (package-install 'dumb-jump)
 (require 'yasnippet)
 (require 'lsp-bridge)
