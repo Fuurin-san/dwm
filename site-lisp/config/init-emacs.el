@@ -19,6 +19,7 @@
     (require 'init-font)
     (require 'init-meow)
     (require 'init-auto-save)
+    (require 'init-savehistory)
     (require 'init-lsp-bridge)
     (require 'init-grammatical-edit)
     (require 'init-key)

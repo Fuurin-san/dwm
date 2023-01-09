@@ -71,48 +71,6 @@
 ;;(add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
 ;;(require 'explain-pause-mode)
 
-;;one-key keypad
-;;(add-to-list 'load-path "~/.emacs.d/github/one-key")
-;;(require 'one-key)
-;;(one-key-create-menu
-;; "MAGIT"
-;; '(
-;;   (("s" . "Magit status") . magit-status+)
-;;   (("c" . "Magit checkout") . magit-checkout)
-;;   (("C" . "Magit commit") . magit-commit)
-;;   (("u" . "Magit push to remote") . magit-push-current-to-pushremote)
-;;   (("p" . "Magit delete remote branch") . magit-delete-remote-branch)
-;;   (("i" . "Magit pull") . magit-pull-from-upstream)
-;;   (("r" . "Magit rebase") . magit-rebase)
-;;   (("e" . "Magit merge") . magit-merge)
-;;   (("l" . "Magit log") . magit-log-all)
-;;   (("L" . "Magit blame") . magit-blame+)
-;;   (("b" . "Magit branch") . magit-branch)
-;;   (("B" . "Magit buffer") . magit-process-buffer)
-;;   (("D" . "Magit discarded") . magit-discard)
-;;   (("," . "Magit init") . magit-init)
-;;   (("." . "Magit add remote") . magit-remote-add)
-;;   )
-;; t)
-
-;;auto-save-command-history
-(use-package savehist
-  :ensure nil
-  :hook (after-init . savehist-mode)
-  :init (setq enable-recursive-minibuffers t
-	      history-length 1000
-	      savehist-additional-variables '(mark-ring
-					      global-mark-ring
-					      search-ring
-					      regexp-search-ring
-					      extended-command-history)
-	      savehist-autosave-interval 300))
-
-;;auto-save-cursor-history
-(use-package saveplace
-  :ensure nil
-  :hook (after-init . save-place-mode))
-
 ;; rust support
 (package-install 'rust-mode)
 (package-install 'flycheck-rust)
