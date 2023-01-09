@@ -52,3 +52,6 @@
 [submodule "site-lisp/extensions/ace-window"]
 	path = site-lisp/extensions/ace-window
 	url = https://github.com/abo-abo/ace-window.git
+[submodule "site-lisp/extensions/flycheck"]
+	path = site-lisp/extensions/flycheck
+	url = https://github.com/flycheck/flycheck.git

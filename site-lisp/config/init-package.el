@@ -20,10 +20,6 @@
 ;;  :bind (("<M-up>" . drag-stuff-up)
 ;;	 ("<M-down>" . drag-stuff-down)))
 
-;;文件格式检查
-(use-package flycheck
-  :hook (after-init . global-flycheck-mode))
-
 ;;minibuffer补全增强 & 无序补全
 (package-install 'vertico)
 (vertico-mode t)
@@ -66,6 +62,8 @@
 ;;emacs top
 ;;(add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
 ;;(require 'explain-pause-mode)
+
+
 
 ;; rust support
 (package-install 'rust-mode)
