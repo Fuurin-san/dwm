@@ -33,6 +33,7 @@
 	 (require 'init-tree-sitter)
 	 ;;(require 'init-rime)
 	 (require 'init-sis)
+	 (require 'init-ace-window)
 	 ))))
 
 ;; GC 優化 emacs 的垃圾回收行爲。
