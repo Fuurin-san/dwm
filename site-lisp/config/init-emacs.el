@@ -23,6 +23,7 @@
     (require 'init-lsp-bridge)
     (require 'init-grammatical-edit)
     (require 'init-key)
+    (require 'init-mode)
     ;; 可以延後加載的
     (run-with-idle-timer
      1 nil
@@ -30,7 +31,6 @@
 	 (require 'init-disable-mouse)
 	 (require 'init-blink-search)
 	 (require 'init-elispfl)
-	 (require 'init-rust)
 	 (require 'init-flycheck)
 	 (require 'init-tree-sitter)
 	 ;;(require 'init-rime)
