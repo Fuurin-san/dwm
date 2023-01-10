@@ -1,3 +1,6 @@
+;;; init-mode.el --- emacs mode support
+;;; Commentary:
+;;; Code:
 (defun add-to-alist (alist-var elt-cons &optional no-replace)
   "Add to the value of ALIST-VAR an element ELT-CONS if it isn't there yet.
 If an element with the same car as the car of ELT-CONS is already present,
@@ -19,4 +22,4 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'rust-mode "rust-mode")
 
 (provide 'init-mode)
-
+;;; init-mode.el ends here
