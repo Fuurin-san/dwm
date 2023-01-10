@@ -30,6 +30,7 @@
 	 (require 'init-disable-mouse)
 	 (require 'init-blink-search)
 	 (require 'init-elispfl)
+	 (require 'init-rust)
 	 (require 'init-flycheck)
 	 (require 'init-tree-sitter)
 	 ;;(require 'init-rime)

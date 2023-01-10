@@ -10,7 +10,9 @@
 (require 'flycheck)
 (global-flycheck-mode)
 
-
+(require 'flycheck-rust)
+(with-eval-after-load 'rust-mode
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
 
 (provide 'init-flycheck)
 ;;; init-flycheck.el ends here

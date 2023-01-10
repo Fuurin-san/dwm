@@ -55,3 +55,9 @@
 [submodule "site-lisp/extensions/flycheck"]
 	path = site-lisp/extensions/flycheck
 	url = https://github.com/flycheck/flycheck.git
+[submodule "site-lisp/extensions/flycheck-rust"]
+	path = site-lisp/extensions/flycheck-rust
+	url = https://github.com/flycheck/flycheck-rust.git
+[submodule "site-lisp/extensions/rust-mode"]
+	path = site-lisp/extensions/rust-mode
+	url = https://github.com/rust-lang/rust-mode.git

@@ -63,14 +63,6 @@
 ;;(add-to-list 'load-path "~/.emacs.d/github/explain-pause-mode")
 ;;(require 'explain-pause-mode)
 
-
-
-;; rust support
-(package-install 'rust-mode)
-(package-install 'flycheck-rust)
-(with-eval-after-load 'rust-mode
-  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
-
 (package-install 'nix-mode)
 
 (provide 'init-package)
