@@ -16,10 +16,12 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 
 (dolist (elt-cons '(
 		    ("\\.rs$" . rust-mode)
+		    ("\\.nix\\'" . nix-mode)
 		    ))
   (add-to-list 'auto-mode-alist elt-cons))
 
 (autoload 'rust-mode "rust-mode")
+(autoload 'nix-mode "nix-mode")
 
 (provide 'init-mode)
 ;;; init-mode.el ends here
