@@ -17,13 +17,6 @@
 (package-install 'marginalia)
 (marginalia-mode)
 
-;;I search
-(package-install 'consult)
-(global-set-key (kbd "C-s") 'consult-line)
-;;search my insert
-(global-set-key (kbd "M-s i") 'consult-imenu)
-;;search function(函数)
-
 (package-install 'all-the-icons)
 (when (display-graphic-p)
   (require 'all-the-icons))
