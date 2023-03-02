@@ -24,6 +24,7 @@
     (require 'init-grammatical-edit)
     (require 'init-key)
     (require 'init-mode)
+    (require 'init-vertico)
     ;; 可以延後加載的
     (run-with-idle-timer
      1 nil

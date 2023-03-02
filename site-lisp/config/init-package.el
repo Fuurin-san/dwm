@@ -8,8 +8,7 @@
   :hook (after-init ./benchmark-init/deactive))
 
 ;;minibuffer补全增强 & 无序补全
-(package-install 'vertico)
-(vertico-mode t)
+;;(package-install 'vertico)
 (package-install 'orderless)
 (setq completion-styles '(orderless))
 
